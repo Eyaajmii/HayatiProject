@@ -1,0 +1,88 @@
+<div class="container">
+    <h1>Ajouter un événement</h1>
+    <form [formGroup]="EventForm" (ngSubmit)="addEventt()">
+      <div>
+        <label>Nom de l'événement</label>
+        <input type="text" formControlName="NomEvent" class="input">
+      </div>
+      <div>
+        <label>Description</label>
+        <textarea formControlName="Description" class="input"></textarea>
+      </div>
+      <div>
+        <label>Type d'événement</label>
+        <input type="text" formControlName="TypeEvent" class="input">
+      </div>
+      <div>
+        <label>Programme</label>
+        <textarea formControlName="programmeEvent" class="input"></textarea>
+      </div>
+      <label>Date de l'événement</label><br>
+      <ul>
+      <li>
+        <div formGroupName="DateEvent">
+        <label>Date précise</label>
+        <input type="text" formControlName="DatePréci" class="input">
+      </div>
+      </li>
+      <li>
+      <div formGroupName="DateEvent">
+        <label>Heure de début</label>
+        <input type="text" formControlName="HeureDebut" class="input">
+      </div>
+    </li>
+  <li>
+      <div formGroupName="DateEvent">
+        <label>Heure de fin</label>
+        <input type="text" formControlName="HeureFin" class="input">
+      </div>
+    </li>
+      </ul>
+      <h5>Compagnie</h5>
+        <div formArrayName="Compagnies">
+            <div *ngFor="let c of LesCompagnies.controls ; let i=index ">
+                <div *ngIf="i<=1">
+                Compagnie {{i+1}} : 
+                <input type="text" [formControlName]="i">
+                <div *ngIf="">min length est 2</div>
+            </div>
+            </div>
+        </div>
+        <button type="button" (click)="onajoutCompagnie()" class="btn btn-secondary">Ajouter une compagnie</button><br>
+        <h5>Place</h5>
+        <div formArrayName="Places">
+            <div *ngFor="let p of lesPlaces.controls ; let i=index ">
+                <div *ngIf="i<=3">
+                Place {{i+1}} : 
+                <input type="text" [formControlName]="i">
+                <div *ngIf="">min length est 2</div>
+            </div>
+            </div>
+        </div>
+        <button type="button" (click)="onajoutPlace()" class="btn btn-secondary">Ajouter une Place</button><br>
+        <h5>Fournisseur</h5>
+        <div formArrayName="Fournisseurs">
+            <div *ngFor="let c of lesFournisseurs.controls ; let i=index ">
+                <div *ngIf="i<=100">
+                Fournisseur {{i+1}} : 
+                <input type="text" [formControlName]="i">
+                <div *ngIf="">min length est 2</div>
+            </div>
+            </div>
+        </div>
+        <button type="button" (click)="onajoutFournisseur()" class="btn btn-secondary">Ajouter un fournisseur</button><br>
+        <h5>Oragnisme </h5>
+        <div formArrayName="Organismes">
+            <div *ngFor="let c of lesOrganismes.controls ; let i=index ">
+                <div *ngIf="i<=20">
+                Organisme {{i+1}} : 
+                <input type="text" [formControlName]="i">
+                <div *ngIf="">min length est 2</div>
+            </div>
+            </div>
+        </div>
+        <button type="button" (click)="onajoutOrganisme()" class="btn btn-secondary">Ajouter une organisme</button><br>
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+  

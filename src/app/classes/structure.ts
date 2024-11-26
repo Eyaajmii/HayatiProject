@@ -1,0 +1,25 @@
+export class Structure {
+    IdStructure!:number;
+    NomSocial!:string;
+    RaisonSocial!:string;
+    ActiviteSocial!:string;
+    ResponsableGénérale!:string;
+    Adressestructure!:string;
+    TelStructure!:number;
+    FaxStructure!:number;
+    EmailStructure!:string;
+    NbreAnnexes!:number;
+    constructor(IdStructure:number,NomSocial:string,RaisonSocial:string,ActiviteSocial:string,ResponsableGénérale:string,
+        Adressestructure:string,TelStructure:number,FaxStructure:number,EmailStructure:string,NbreAnnexes:number){
+            this.IdStructure=IdStructure;
+            this.NomSocial=NomSocial;
+            this.RaisonSocial=RaisonSocial;
+            this.ActiviteSocial=ActiviteSocial;
+            this.ResponsableGénérale=ResponsableGénérale;
+            this.Adressestructure=Adressestructure;
+            this.TelStructure=TelStructure;
+            this.FaxStructure=FaxStructure;
+            this.EmailStructure=EmailStructure;
+            this.NbreAnnexes=NbreAnnexes;
+    }
+}

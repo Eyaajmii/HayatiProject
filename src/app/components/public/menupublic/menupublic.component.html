@@ -1,0 +1,49 @@
+<!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a routerLink="/home">
+            <img class="img-fluid logo" src="assets/logoHayett.png" alt="">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 active">
+                <a routerLink="/Particuliers" class="nav-item nav-link">PARTICULIERE</a>
+                <a routerLink="/Entreprises" class="nav-item nav-link ">ENTREPRISE</a>
+                <a routerLink="HayettAssurance" class="nav-item nav-link">HAYETT ASSURANCE</a>
+            </div>
+            <button (click)="LogIn()" >
+                Sign up
+                <div class="arrow-wrapper">
+                    <div class="arrow"></div>
+            
+                </div>
+            </button>
+            
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="assets/home.png" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown mb-4"> Assurance vie Hayett <br> <span class="text-primary">un rendement </span> avantageux</h1>
+                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Découvrez vous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+   

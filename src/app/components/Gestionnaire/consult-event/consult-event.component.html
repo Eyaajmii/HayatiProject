@@ -1,0 +1,15 @@
+<h1>Liste des  événements </h1>
+<table >
+    <tr>
+        <th>Nom</th>
+        <th>Description</th>
+     
+        <th colspan="2">Fonctionnalité</th>
+    </tr>
+    <tr *ngFor="let e of lesEvenements">
+        <td>{{e.NomEvent}}</td>
+        <td>{{e.Description}}</td>
+        <td><button (click)="supprimerEvent(e.id)" >Delete</button></td>
+    </tr>
+</table>
+

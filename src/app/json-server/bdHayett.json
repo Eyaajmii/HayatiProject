@@ -1,0 +1,102 @@
+{
+  "Evenement": [
+    {
+      "NomEvent": "eya",
+      "Description": "zfezf",
+      "TypeEvent": "zedzed",
+      "programmeEvent": "ezdfzefd",
+      "Compagnies": [
+        "edez"
+      ],
+      "DateEvent": {
+        "DatePréci": "zefdez",
+        "HeureDebut": "zeedez",
+        "HeureFin": "ezfez"
+      },
+      "Places": [
+        "eezdez"
+      ],
+      "Fournisseurs": [
+        "ezfe"
+      ],
+      "Organismes": [
+        "efezf"
+      ],
+      "id": 1
+    }
+  ],
+  "Participant": [
+    {
+      "id": 1,
+      "NomPersonne": "Ajmi",
+      "PrenomPersonne": "Eya",
+      "NationnalitePersonne": "Tunisiene",
+      "AdressePersonne": "Borj El amri",
+      "TelPersonne": "95441814",
+      "EmailPersonne": "ajmieya@gmail.com",
+      "AgeParticipant": "21",
+      "sexeParticipant": "Femme",
+      "maladieParticipant": false
+    }
+  ],
+  "Structure": [
+    {
+      "id": 0,
+      "NomSocial": "",
+      "RaisonSocial": "",
+      "ActiviteSocial": "",
+      "ResponsableGénérale": "",
+      "Adressestructure": "",
+      "TelStructure": 0,
+      "FaxStructure": 0,
+      "EmailStructure": "",
+      "NbreAnnexes": 0
+    }
+  ],
+  "Date": [
+    {
+      "id": 0,
+      "DatePréci": "",
+      "HeureDebut": "",
+      "HeureFin": ""
+    }
+  ],
+  "Place": [
+    {
+      "Idplaces": 0,
+      "IntitulePlace": "",
+      "AdressePlace": "",
+      "ResponsablePlace": "",
+      "TelPlace": 0,
+      "FaxPlace": 0,
+      "EmailPlace": ""
+    }
+  ],
+  "Fournisseur": [
+    {
+      "id": 0,
+      "NomFournisseur": "",
+      "ResponsableFournisseur": "",
+      "AdresseFournisseur": "",
+      "EmailFournisseur": "",
+      "FaxFournisseur": 0
+    }
+  ],
+  "Organismes": [
+    {
+      "id": 0,
+      "NomFournisseur": "",
+      "ResponsableFournisseur": "",
+      "AdresseFournisseur": "",
+      "EmailFournisseur": "",
+      "FaxFournisseur": 0
+    }
+  ],
+  "loginGestionnaire": [
+    {
+      "id": 1,
+      "email": "GestionnaireHayett@Hayett.com",
+      "password": "gestionnaire"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<h1>Liste des participants</h1>
+<table >
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Nationalité</th>
+        <th>Age</th>
+        <th>Sexe</th>
+        <th>Adresse</th>
+        <th>Téléphone</th>
+        <th>Email</th>
+        <th>Maladie</th>
+        <th colspan="2">Fonctionnalité</th>
+    </tr>
+    <tr *ngFor="let p of lesparticipants">
+        <td>{{p.NomPersonne}}</td>
+        <td>{{p.PrenomPersonne}}</td>
+        <td>{{p.NationnalitePersonne}}</td>
+       <td>{{p.AgeParticipant}}</td>
+        <td>{{p.sexeParticipant}}</td>
+        <td>{{p.AdressePersonne}}</td>
+        <td>{{p.TelPersonne}}</td>
+        <td>{{p.EmailPersonne}}</td>
+        <td><input type="checkbox" [checked]="p.maladieParticipant" style="margin-left: 15px;"></td>
+        <td><button (click)="SupprimerParticipant(p.id)" >Delete</button></td>
+    </tr>
+</table>

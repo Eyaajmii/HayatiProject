@@ -1,0 +1,45 @@
+<div class="container">
+    <h1>Ajouter un participant</h1>
+    <form [formGroup]="InscrirForum" (ngSubmit)="addparticipant()">
+        <div>
+            <label>Nom</label>
+            <input type="text" formControlName="NomPersonne" class="input">
+        </div>
+        <div>
+            <label>Prénom</label>
+            <input type="text" formControlName="PrenomPersonne" class="input">
+        </div>
+        <div>
+            <label>Nationalité</label>
+            <input type="text" formControlName="NationnalitePersonne" class="input">
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="text" formControlName="AgeParticipant" class="input">
+        </div>
+        <div>
+            <label>Sexe</label>
+            <select formControlName="sexeParticipant">
+                <option value="Femme">Femme</option>
+                <option value="Homme">Homme</option>
+            </select>
+        </div>
+        <div>
+            <label>Adresse</label>
+            <input type="text" formControlName="AdressePersonne" class="input">
+        </div>
+        <div>
+            <label>Téléphone</label>
+            <input type="text" formControlName="TelPersonne" class="input">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" formControlName="EmailPersonne" class="input">
+        </div>
+        <div>
+            <label>Maladie</label>
+            <input type="checkbox" formControlName="maladieParticipant" class="input">
+        </div>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>

@@ -1,0 +1,180 @@
+ 
+ <!-- About Start -->
+ <div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container about py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="assets/home2.jpg" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="text-secondary text-uppercase mb-3">à propos de nous</h6>
+                <h1 class="mb-5">Filiale de la COMAR</h1>
+                <p class="mb-5"> Hayett est spécialisée en assurance vie et capitalisation.Depuis sa création, Hayett a développé une gamme complète de produits d’épargne et de prévoyance, conçus pour répondre aux besoins de sa clientèle, aussi bien des particuliers que des entreprises, en matière de préparation de l’avenir et de protection sociale complémentaire.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Fact Start -->
+<div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Quelques faits</h6>
+                <h1 class="mb-5">#1 Endroit pour Gérer toutes Vous Assurances Vie</h1>
+                <p class="mb-5">Hayett s’est imposée parmi les leaders du marché de l’assurance vie en Tunisie, grâce à une parfaite connaissance des différents systèmes de couvertures sociales, du fonctionnement du marché financier et des dispositions fiscales spécifiques aux produits d’épargne et d’assurance vie.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                            <i class="fa fa-users fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up"><span><h6>à propos de</h6></span> 11234</h2>
+                            <p class="text-white mb-0">Clients satisfaites</p>
+                        </div>
+                        <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-ship fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">80589 <span><h6>millieres dinars en 2021</h6></span></h2>
+                            <p class="text-white mb-0">Chiffres d'affaire</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-star fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up"><span><h6>à propos de</h6></span>1234</h2>
+                            <p class="text-white mb-0">Avis des clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fact End -->
+<!-- Testimonial Start -->
+<!--<div>
+    <p class="service mb-5">Une offre complète et variée adaptée à vos besoins</p>
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide slide_1">
+                    <div class="slide-content">
+                       <h2 >About our training</h2>
+                       <p class="tt">"Our club proudly represents a dynamic partnership with </p>
+                        <p class="tt">leading training centers renowned for their  </p>
+                        <p class="tt">excellence in diverse levels and specialized</p>
+                        <p class="tt">fields of computer science, IT, and personal development."</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_2">
+                    <div class="slide-content">
+                       <h2 style="color:beige;margin-top: -10%;">Comming Soon</h2>
+                       <p class="tt" >web page création compétition for à company</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_3">
+                    <div class="slide-content">
+                       <h2>Our Club Anniversary </h2>
+                       <p class="tt">Our 3rd Club Anniversary on December 25th.</p> 
+                       <p class="tt">We are honored to meet you at The Golf Soukra</p>
+                       <p class="tt"> from 5:00 PM onwards</p>
+                    </div>
+                 </div>
+                 <div class="slide slide_4">
+                    <div class="slide-content">
+                       <h2>Member of the Month </h2>
+                       <img src="assets/member.png" style="border-radius: 50%;">
+                       <p class="tt">Ajmi Emna</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+         </div>
+     </div>
+</div>-->
+
+<c-carousel [dark]="true" [wrap]="false">
+    <c-carousel-indicators></c-carousel-indicators>
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides; index as i;">
+        <img
+          [src]="slide.src"
+          alt="{{slide.title}}"
+          class="d-block w-100"
+          loading="lazy"
+        />
+        <c-carousel-caption class="d-none d-md-block">
+          <h3>{{slide.title}}</h3>
+          <p>{{slide.subtitle}}</p>
+        </c-carousel-caption>
+      </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+  </c-carousel>
+<!-- Testimonial End -->
+
+<!-- Service Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Nos Services</h6>
+                <h1 class="mb-5">We Are Trusted Logistics Company Since 1990</h1>
+                <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Worldwide Service</h5>
+                        <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>On Time Delivery</h5>
+                        <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>24/7 Telephone Support</h5>
+                        <p class="mb-0">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service End -->
+
+
+
+
+
